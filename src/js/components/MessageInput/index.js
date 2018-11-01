@@ -89,6 +89,7 @@ export default class MessageInput extends Component {
     }
 
     async batchProcess(file) {
+        console.log(JSON.stringify(file));
         var message;
         var batch = this.props.user.length > 1;
         var receiver = this.props.user.filter(e => e.UserName !== this.props.me.UserName);

@@ -14,7 +14,7 @@ import ChatContent from './ChatContent';
     showConversation: stores.chat.showConversation,
     toggleConversation: stores.chat.toggleConversation,
     showRedIcon: stores.settings.showRedIcon,
-    newChat: () => stores.newchat.toggle(true),
+    newChat: () => stores.batchsend.toggle(true),
 }))
 @observer
 export default class Home extends Component {
